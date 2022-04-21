@@ -6,7 +6,7 @@ from form_data import ValuePredictor, ValuePredictor1
 from pneumonia_model import pneumo
 from malaria import malar
 from twilio.rest import Client
-
+#BOT
 account_sid = "ACbbab399c909178de89dc76ecc9d7fdf5"
 auth_token = "df4d20e792621ed79ebfeae43d3fbc20"
 
