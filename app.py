@@ -8,7 +8,7 @@ from malaria import malar
 from twilio.rest import Client
 
 account_sid = "ACbbab399c909178de89dc76ecc9d7fdf5"
-auth_token = "0daa806dc79da73c27778048eba57990"
+auth_token = "df4d20e792621ed79ebfeae43d3fbc20"
 
 ALLOWED_EXTENSIONS = set(['tif', 'png', 'jpg', 'jpeg'])
 
