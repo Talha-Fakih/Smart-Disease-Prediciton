@@ -160,7 +160,7 @@ def get_my_ip():
     # return request.environ.get('HTTP_X_REAL_IP', request.remote_addr) 
     # return request.remote_addr
 
-@app.route("/home", methods=['POST'])
+@app.route("/home", methods=['POST','GET'])
 def send_mail():
     if request.method == "POST":
         user_name = request.form["name"]
@@ -177,6 +177,7 @@ def send_mail():
                      to='+919702512358'
                  )
         return render_template('index.html')
+    return render_template('index.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
