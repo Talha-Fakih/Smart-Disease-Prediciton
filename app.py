@@ -7,8 +7,8 @@ from pneumonia_model import pneumo
 from malaria import malar
 from twilio.rest import Client
 
-account_sid = "ACbbab399c909178de89dc76ecc9d7fdf5"
-auth_token = "df4d20e792621ed79ebfeae43d3fbc20"
+account_sid = <token_id>
+auth_token = <auth_token_id>
 
 ALLOWED_EXTENSIONS = set(['tif', 'png', 'jpg', 'jpeg'])
 
@@ -173,8 +173,8 @@ def send_mail():
         message = client.messages \
                 .create(
                      body=f"\nName: {user_name}\nEmail: {user_email}\nSubject: {user_subject}\n\nMessage: {user_message}",
-                     from_='+18597105349',
-                     to='+919702512358'
+                     from_='<phone_num>',
+                     to='<phone_num>'
                  )
         return render_template('index.html')
     return render_template('index.html')
